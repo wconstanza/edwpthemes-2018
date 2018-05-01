@@ -1,16 +1,14 @@
 </main>
   <footer>
-    <nav class="SocialMedia">
-      <ul>
-        <li><a href="">Redes 1</a></li>
-        <li><a href="">Redes 2</a></li>
-        <li><a href="">Redes 3</a></li>
-        <li><a href="">Redes 4</a></li>
-        <li><a href="">Redes 5</a></li>
-      </ul>
-    </nav>
+    <?php
+       wp_nav_menu( array(
+          'theme_location' => 'social_menu',
+          'container' => 'nav',
+          'container_class' => 'SocialMedia'
+        ) );
+    ?>
     <div>
-      <small>&copy; 2018 por @jonmircha</small>
+      <small>&copy; <?php echo date('Y'); ?> por @jonmircha</small>
     </div>
   </footer>
   <?php wp_footer(); ?>

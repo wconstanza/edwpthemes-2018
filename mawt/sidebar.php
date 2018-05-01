@@ -1,4 +1,13 @@
   <aside class="Sidebar">
       <h2>Sidebar</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium et laborum, fugiat aut unde molestias harum neque sapiente dignissimos ratione voluptate non iure debitis assumenda repellat vitae ipsa libero veniam?</p>
+      <?php
+        if ( is_active_sidebar( 'main_sidebar' ) ):
+          dynamic_sidebar( 'main_sidebar' );
+        else:
+      ?>
+        <article class="Widget">
+          <h3><?php _e('Buscar', 'mawt'); ?></h3>
+          <?php get_search_form(); ?>
+        </article>
+      <?php endif; ?>
     </aside>

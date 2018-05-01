@@ -33,7 +33,7 @@
             <?php the_author_posts_link(); ?>
           </p>
           <div class="the-content">
-            <?php the_content(); ?>
+            <?php //the_content(); ?>
           </div>
         </article>
         <hr>

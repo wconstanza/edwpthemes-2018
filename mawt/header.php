@@ -12,15 +12,20 @@
     <div class="Logo">
       <a href="<?php echo esc_url( home_url( '/' ) ); ?>">Logo</a>
     </div>
-    <nav class="Menu">
-      <ul>
-        <li><a href="">Sección 1</a></li>
-        <li><a href="">Sección 2</a></li>
-        <li><a href="">Sección 3</a></li>
-        <li><a href="">Sección 4</a></li>
-        <li><a href="">Sección 5</a></li>
-      </ul>
-    </nav>
+    <?php
+      if ( has_nav_menu( 'main_menu' ) ):
+        wp_nav_menu( array(
+          'theme_location' => 'main_menu',
+          'container' => 'nav',
+          'container_class' => 'Menu'
+        ) );
+      else: ?>
+      <nav class="Menu">
+        <ul>
+          <?php wp_list_pages('title_li'); ?>
+        </ul>
+      </nav>
+    <?php endif; ?>
   </header>
   <main class="Main">
 
