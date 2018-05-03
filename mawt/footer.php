@@ -1,5 +1,5 @@
 </main>
-  <footer>
+  <footer class="Footer">
     <?php
        wp_nav_menu( array(
           'theme_location' => 'social_menu',

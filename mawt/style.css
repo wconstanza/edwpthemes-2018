@@ -15,4 +15,71 @@ html {
   font-size: 16px;
   background-color: #222;
   color: greenyellow;
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+.Header,
+.Main,
+.Footer {
+  border: thin solid greenyellow;
+  margin-bottom: 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.Main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas: 'content sidebar'
+                                            'other sidebar';
+  grid-gap: 1rem;
+}
+
+.Main > * {
+  background-color: #CCC;
+  padding: 1rem;
+  color: #222;
+}
+
+.Content {
+  grid-area: content;
+}
+
+.Content hr {
+  border: thick dotted greenyellow;
+  margin: 3rem auto;
+  width: 80%;
+}
+
+.Sidebar {
+  grid-area: sidebar;
+}
+
+.Other {
+  grid-area: other;
+}
+
+.Widget,
+.Pagination {
+  background-color: #AAA;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+.Error404 {
+  font-size: 5vw;
+  font-weight: bold;
+  text-align: center;
 }

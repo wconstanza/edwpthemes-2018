@@ -7,7 +7,7 @@
  * @package WordPress
  * @subpackage mawt
  * @since 1.0.0
- * @version 1.3.0
+ * @version 1.3.1
  */
 
 if ( !function_exists( 'mawt_scripts' ) ) :
