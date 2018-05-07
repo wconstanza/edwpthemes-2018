@@ -56,8 +56,6 @@ También se puede modificar el comportamiento de WordPress a través de:
 
 ## 1) Conceptos básicos para desarrollo de temas.
 
-### Temario:
-
 * ¿Qué es un tema?
   * Archivos básicos de un tema
   * Dividiendo el tema: Headers, Footers, Sidebars y Templates Parts
@@ -89,5 +87,22 @@ También se puede modificar el comportamiento de WordPress a través de:
     * Aplicando conditional tags a nuestro tema
 
 ## 2) Conceptos avanzados para desarrollo de temas.
+
+ * Personalización dinámica desde el Dashboard
+    * Activando el personalizador del tema
+    * Configuración del personalizador del tema
+    * Activando la cabecera multimedia
+  * Modificando el Backend de WordPress
+    * Página de Login
+    * Dashboard de WordPress
+  * Internacionalización
+  * Child Themes
+  * Clase WP Query
+  * Taxonomías Avanzadas
+    * Taxonomías y Términos
+    * Custom Post Types
+    * Custom Fields
+    * Metaboxes
+
 ## 3) Buenas prácticas y herramientas para el desarrollo de temas.
 ## 4) Creando mi primer tema profesional.
