@@ -83,3 +83,9 @@ img {
   font-weight: bold;
   text-align: center;
 }
+
+.custom-logo-link img {
+  background-color: #EEE;
+  width: 100px;
+  height: auto;
+}
